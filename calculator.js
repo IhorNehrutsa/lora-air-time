@@ -20,7 +20,7 @@ var app = new Vue({
     },
     check_preamble_len: function () {
       this.preamble_len_valid = !(
-        this.preamble_len < 6 || this.preamble_len > 655365
+        this.preamble_len < 1 || this.preamble_len > 655365
       );
     },
   },

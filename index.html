@@ -58,7 +58,7 @@
           <input
             type="number"
             class="form-control"
-            placeholder="The size of your preamble (6~65535 Symbols)"
+            placeholder="The size of your preamble (1~65535 Symbols)"
             name="preamble-len"
             v-model.number="preamble_len"
             v-on:blur="check_preamble_len"
@@ -66,7 +66,7 @@
           />
           <span class="input-group-text">Symbols</span>
           <div class="invalid-feedback">
-            Length of preamble must between 6~65535 symbols.
+            Length of preamble must between 1~65535 symbols.
           </div>
         </div>
       </div>
@@ -78,6 +78,7 @@
             name="sf"
             v-model.number="spreading_factor"
           >
+            <option value="5">5</option>
             <option value="6">6</option>
             <option value="7">7</option>
             <option value="8">8</option>
@@ -90,12 +91,12 @@
         <div class="col-auto">
           <label for="bw" class="form-label">Bandwidth</label>
           <select class="form-select" name="bw" v-model.number="bandwidth">
-            <option value="7.8">7.8KHz</option>
-            <option value="10.4">10.4KHz</option>
-            <option value="15.6">15.6KHz</option>
-            <option value="20.8">20.8KHz</option>
-            <option value="31.2">31.2KHz</option>
-            <option value="41.7">41.7KHz</option>
+            <option value="7.81">7.81KHz</option>
+            <option value="10.42">10.42KHz</option>
+            <option value="15.63">15.63KHz</option>
+            <option value="20.83">20.83KHz</option>
+            <option value="31.25">31.25KHz</option>
+            <option value="41.67">41.67KHz</option>
             <option value="62.5">62.5KHz</option>
             <option value="125">125KHz</option>
             <option value="250">250KHz</option>
